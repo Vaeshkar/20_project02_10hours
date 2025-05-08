@@ -1,9 +1,135 @@
 /* styles for the time travel page */
 
+/* Import fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Quicksand:wght@300..700&display=swap');
+
+/* Quicksand */
+.quicksand-regular {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .quicksand-bold {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+/* Fredoka */
+
+
+.fredoka-regular {
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
+  .fredoka-bold {
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
+
 /* Root styles */ 
 :root {
-   
+    --color-primary-1: #8B5E3C;
+    --color-primary-2: #6B8E23;
+    --color-primary-3: #87CEEB;
+
+    --color-secondary-1: #FFD700;
+    --color-secondary-2: #F8F8F8;
+    
+    --color-stone-gray: #A9A9A9;
+
+    --gradient-hero: radial-gradient(circle, #8B5E3C, #6B8E23);
+    --gradient-section: radial-gradient(circle, #87CEEB, #F8F8F8);
+    --gradient-button: radial-gradient(circle, #FFD700, #6B8E23);
+    --gradient-footer: radial-gradient(circle, #8B5E3C, #87CEEB);
+
     --border-radius: 20px; 
     --border-radius-small: 10px;
+}
+
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: "Quicksand", sans-serif;
+    background: var(#fff);
+    color: var(--color-primary-1);
+
+    text-align: center;
+  }
+
+/* Layout sections */
+
+section {
+    min-height: 500px;
+}
+
+/* Navigation */
+nav {
+background: var(--color-secondary-1);
+padding: 1rem;
+min-height: 5rem;
+border-bottom-left-radius: var(--border-radius);
+border-bottom-right-radius: var(--border-radius);
+
+}
+
+/* Hero Section */
+#hero {
+background: var(--color-primary-3);
+min-height: 50vw;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+/* About Section */
+#about {
+background: var(--gradient-section);
+}
+
+/* Image Gallery 1 */
+#img-gallery-1 {
+background: var(--gradient-section);
+}
+
+/* Shop Section */
+#shop {
+background: var(--gradient-section);
+}
+
+/* Contact Section */
+#contact {
+background: var(--gradient-section);
+}
+
+/* Image Gallery 2 */
+#img-gallery-2 {
+background: var(--gradient-section);
+}
+
+/* Footer */
+footer {
+min-height: 25rem;
+background: var(--color-secondary-1);
+padding: 1.5rem;
+color: white;
+font-size: 0.9rem;
+border-top-left-radius: var(--border-radius);
+border-top-right-radius: var(--border-radius);
 }
 
