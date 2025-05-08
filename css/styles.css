@@ -58,6 +58,9 @@
     --border-radius-small: 10px;
 }
 
+html {
+    background: var(--color-light-white);
+}
 
 body {
     max-width: 1200px;
@@ -65,6 +68,10 @@ body {
     font-family: "Quicksand", sans-serif;
     background: var(#fff);
     color: var(--color-primary-1);
+
+    font-weight: 700;
+    font-size: 54px;
+    color: var(--color-light-white);
   }
 
 /* Layout sections */
@@ -159,16 +166,16 @@ background: var(--color-secondary-yellow);
     margin-bottom: 2rem;
 }
 
-
 /* Footer */
 footer {
-min-height: 25rem;
-background: var(--color-secondary-yellow);
-padding: 1.5rem;
-color: black;
-font-size: 0.9rem;
-border-top-left-radius: var(--border-radius);
-border-top-right-radius: var(--border-radius);
+    display: flex;
+    justify-content: center;
+    align-items: center;       
+    min-height: 25rem;
+    background: var(--color-secondary-yellow);
+    padding: 1.5rem;
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
 }
 
 /* Logo Styling */
