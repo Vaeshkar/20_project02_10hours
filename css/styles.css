@@ -65,6 +65,7 @@ html {
 body {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 1rem;
     font-family: "Quicksand", sans-serif;
     background: var(#fff);
     color: var(--color-primary-1);
