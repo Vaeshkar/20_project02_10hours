@@ -1,0 +1,9 @@
+/* styles for the time travel page */
+
+/* Root styles */ 
+:root {
+   
+    --border-radius: 20px; 
+    --border-radius-small: 10px;
+}
+
