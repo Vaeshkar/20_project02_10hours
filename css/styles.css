@@ -46,6 +46,7 @@
     --color-primary-blue: #87CEEB;
     --color-secondary-yellow: #FFD700;
     --color-logo-blue: #4169E1;
+    --color-wood-brown: #D2B48C;
     --color-soft-blue: rgba(135, 206, 235, 0.1);
     --color-soft-yellow: rgba(255, 215, 0, 0.1);
 
@@ -149,12 +150,12 @@ background: var(--color-secondary-yellow);
 
 /* Contact Section */
 #contact {
-    background: var(--color-primary-blue);
+    background: var(--color-wood-brown);
 }
 
 /* Image Gallery 2 */
 #img-gallery-2 {
-    background: var(--color-logo-blue);
+    background: var(--color-primary-blue);
     margin-bottom: 2rem;
 }
 
