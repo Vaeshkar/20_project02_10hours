@@ -43,19 +43,15 @@
 
 /* Root styles */ 
 :root {
-    --color-primary-1: #8B5E3C;
-    --color-primary-2: #6B8E23;
-    --color-primary-3: #87CEEB;
+    --color-primary-blue: #87CEEB;
+    --color-secondary-yellow: #FFD700;
+    --color-logo-blue: #4169E1;
+    --color-soft-blue: rgba(135, 206, 235, 0.1);
+    --color-soft-yellow: rgba(255, 215, 0, 0.1);
 
-    --color-secondary-1: #FFD700;
-    --color-secondary-2: #F8F8F8;
-    
-    --color-stone-gray: #A9A9A9;
+    --color-light-white: #FFFAF0;
 
-    --gradient-hero: radial-gradient(circle, #8B5E3C, #6B8E23);
-    --gradient-section: radial-gradient(circle, #87CEEB, #F8F8F8);
-    --gradient-button: radial-gradient(circle, #FFD700, #6B8E23);
-    --gradient-footer: radial-gradient(circle, #8B5E3C, #87CEEB);
+    --gradient-hero: radial-gradient(circle, #87CEEB, #FFD700);
 
     --border-radius: 20px; 
     --border-radius-small: 10px;
@@ -68,8 +64,6 @@ body {
     font-family: "Quicksand", sans-serif;
     background: var(#fff);
     color: var(--color-primary-1);
-
-    text-align: center;
   }
 
 /* Layout sections */
@@ -80,12 +74,44 @@ section {
 
 /* Navigation */
 nav {
-background: var(--color-secondary-1);
-padding: 1rem;
-min-height: 5rem;
-border-bottom-left-radius: var(--border-radius);
-border-bottom-right-radius: var(--border-radius);
+  background: var(--color-secondary-yellow);
+  padding: 1rem;
+  min-height: 5rem;
+  border-bottom-left-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
+/* Navigation container */
+nav {
+    align-items:  stretch;
+}
+
+.nav-links {
+  background: var(--color-light-white);
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius-small);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Navigation Links */
+nav a {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--color-logo-blue);
+  text-decoration: none;
+  margin: 0 1rem;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  transform: scale(1.1);
+  color: var(--color-secondary-yellow);
 }
 
 /* Hero Section */
@@ -125,11 +151,28 @@ background: var(--gradient-section);
 /* Footer */
 footer {
 min-height: 25rem;
-background: var(--color-secondary-1);
+background: var(--color-secondary-yellow);
 padding: 1.5rem;
-color: white;
+color: black;
 font-size: 0.9rem;
 border-top-left-radius: var(--border-radius);
 border-top-right-radius: var(--border-radius);
 }
 
+/* Logo Styling */
+.logo {
+  font-family: "Fredoka", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--color-logo-blue);
+  background: var(--color-light-white);
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius-small);
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+}
+
+.logo:hover {
+    color: var(--color-secondary-yellow);
+    cursor: pointer;
+  }
