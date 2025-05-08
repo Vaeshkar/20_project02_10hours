@@ -4,56 +4,88 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/styles.css">
 
-  <title>Project 02</title>
+  <title>Project 02 | Woody Friends</title>
 </head>
-<body>
-  <header>
-    <nav>
-      <div class="logo">Woody Friends</div>
-      <div class="nav-links">
-        <a href="#hero">Home</a>
-        <a href="#about">About</a>
-        <a href="#shop">Shop</a>
-        <a href="#contact">Contact</a>
+<body class="font-quicksand">
+  <div class="max-w-[1200px] mx-auto px-4">
+    <header class="bg-woodyyellow p-4 flex items-center justify-between rounded-b-2xl">
+      <div class="bg-lightwhite text-woodyblue px-4 py-2 rounded-md font-bold text-2xl font-fredoka cursor-pointer hover:text-woodyyellow transition-all duration-300">
+        Woody Friends
       </div>
-    </nav>
-  </header>
-  <main>
-    <section id="hero">
-      "Hero"
-      <!-- Hero Section -->
-    </section>
+      <nav class="flex items-center gap-6 bg-lightwhite px-6 py-2 rounded-md">
+        <a href="#hero" class="text-woodyblue text-base font-bold hover:text-woodyyellow transition-all duration-300">Home</a>
+        <a href="#about" class="text-woodyblue text-base font-bold hover:text-woodyyellow transition-all duration-300">About</a>
+        <a href="#shop" class="text-woodyblue text-base font-bold hover:text-woodyyellow transition-all duration-300">Shop</a>
+        <a href="#contact" class="text-woodyblue text-base font-bold hover:text-woodyyellow transition-all duration-300">Contact</a>
+      </nav>
+    </header>
+    
+    <main class="flex flex-col gap-6">
+      <section id="hero" class="flex flex-col items-center justify-center min-h-[500px] bg-woodylightblue text-white text-center">
+        <h1 class="text-5xl font-bold mb-4">Welcome to Woody Friends!</h1>
+        <p class="text-xl">Handcrafted wooden multi-tools for young adventurers.</p>
+      </section>
 
-    <section id="about">
-      "About"
-      <!-- About Us Section -->
-    </section>
+      <section id="about" class="flex flex-col items-center justify-center min-h-[500px] bg-woodyyellow text-white text-center">
+        <h1 class="text-5xl font-bold">About</h1>
+        <!-- About Us Section -->
+      </section>
 
-    <section id="img-gallery-1">
-      "Gallery 1"
-      <!-- Image Gallery 1 -->
-    </section>
+      <section id="img-gallery-1" class="flex flex-col items-center justify-center min-h-[500px] bg-woodyblue text-white text-center">
+        <h1 class="text-5xl font-bold">Gallery 1</h1>
+        
+        <!-- Image Gallery 1 -->
+      </section>
 
-    <section id="shop">
-      "Shop, 3 Products"
-      <!-- Shop Section -->
-    </section>
+      <section id="shop" class="flex flex-col items-center justify-center min-h-[500px] bg-woodyyellow text-white text-center">
+        <h1 class="text-5xl font-bold">Shop, 3 Products</h1>
+        <!-- Shop Section -->
+      </section>
 
-    <section id="contact">
-      "Contact"
-      <!-- Contact Section -->
-    </section>
+      <section id="contact" class="flex flex-col items-center justify-center min-h-[500px] bg-woodywood text-white text-center">
+        <h1 class="text-5xl font-bold">Contact</h1>
+        <!-- Contact Section -->
+      </section>
 
-    <section id="img-gallery-2">
-      "Gallery 2"
-      <!-- Image Gallery 2 -->
-    </section>
-  </main>
-  <footer>
-    "Footer"
-    <!-- Footer content -->
-  </footer>
+      <section id="img-gallery-2" class="flex flex-col items-center justify-center min-h-[500px] bg-woodylightblue text-white text-center mb-6">
+        <h1 class="text-5xl font-bold">Gallery 2</h1>
+        <!-- Image Gallery 2 -->
+      </section>
+    </main>
+    <footer class="bg-woodyyellow p-14 flex items-center justify-between rounded-t-2xl text-white text-center">
+      <h1 class="text-5xl font-bold">Footer</h1>
+      <!-- Footer content -->
+    </footer>
+  </div>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            woodylightblue: '#87CEEB',
+            woodyblue: '#4169E1',
+            woodyyellow: '#FFD700',
+            woodywood: '#D2B48C',
+            softblue: 'rgba(135, 206, 235, 0.1)',
+            softyellow: 'rgba(255, 215, 0, 0.1)',
+            lightwhite: '#FFFAF0',
+          },
+        fontFamily: {
+          quicksand: ['Quicksand', 'sans-serif'],
+          fredoka: ['Fredoka', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style type="text/tailwindcss">
+    @layer components {
+      section {
+        @apply rounded-2xl;
+      }
+    }
+  </style>
 </body>
 </html>

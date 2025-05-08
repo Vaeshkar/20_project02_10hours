@@ -1,0 +1,26 @@
+{
+  "name": "20_project02_10hours",
+  "version": "1.0.0",
+  "description": "## Collaborators - **Abiy** - **Yuliia** - **Dennis van Leeuwen**",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vaeshkar/20_project02_10hours.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vaeshkar/20_project02_10hours/issues"
+  },
+  "homepage": "https://github.com/Vaeshkar/20_project02_10hours#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.1.5"
+  }
+}
