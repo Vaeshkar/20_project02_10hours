@@ -68,7 +68,17 @@ body {
 
 /* Layout sections */
 
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
 section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--border-radius);
     min-height: 500px;
 }
 
@@ -114,39 +124,40 @@ nav a:hover {
   color: var(--color-secondary-yellow);
 }
 
+/* base section settings */
+
 /* Hero Section */
 #hero {
-background: var(--color-primary-3);
+background: var(--color-primary-blue);
 min-height: 50vw;
-display: flex;
-align-items: center;
-justify-content: center;
 }
 
 /* About Section */
 #about {
-background: var(--gradient-section);
+background: var(--color-secondary-yellow);
 }
 
 /* Image Gallery 1 */
 #img-gallery-1 {
-background: var(--gradient-section);
+background: var(--color-logo-blue);
 }
 
 /* Shop Section */
 #shop {
-background: var(--gradient-section);
+background: var(--color-secondary-yellow);
 }
 
 /* Contact Section */
 #contact {
-background: var(--gradient-section);
+    background: var(--color-primary-blue);
 }
 
 /* Image Gallery 2 */
 #img-gallery-2 {
-background: var(--gradient-section);
+    background: var(--color-logo-blue);
+    margin-bottom: 2rem;
 }
+
 
 /* Footer */
 footer {
