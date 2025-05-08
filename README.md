@@ -3,7 +3,7 @@
 ## Collaborators
 - **Abiy**
 - **Yuliia**
-- **Dennis**
+- **Dennis van Leeuwen**
 
 ## Project Overview
 This project is part of the WBS Coding School curriculum. Our task is to collaboratively design and develop a website within 10 hours, following modern development practices and focusing on collaboration, accessibility, and responsive design.
