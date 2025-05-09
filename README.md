@@ -48,3 +48,22 @@ This project is part of the WBS Coding School curriculum. Our task is to collabo
 ---
 
 Let's build something great together! 🚀
+
+---
+
+## Style Guide
+
+### Concept  
+**Woody Friends** is a playful brand of handcrafted all-wood multitools designed for kids and dreamers of all ages. The project aims to combine eco-friendly materials with child-safe design and imagination-inspiring aesthetics. The website uses a mobile-first, kid-friendly visual style.
+
+### Fonts
+- **Quicksand** (clean, rounded sans-serif for body text)
+- **Fredoka** (bold, playful headline font)
+
+### Color Palette
+- `#4169E1` → Woody Blue (Primary brand color)
+- `#FFD700` → Woody Yellow (Accent color)
+- `#D2B48C` → Woody Wood (Soft background and accent tone)
+- `rgba(135, 206, 235, 0.1)` → Soft Blue (Light section background)
+- `rgba(255, 215, 0, 0.1)` → Soft Yellow (Light section background)
+- `#FFFAF0` → Light White (Neutral background tone)
