@@ -8,8 +8,8 @@
   <title>Project 02 | Woody Friends</title>
 </head>
 <body class="font-quicksand">
-  <div class="max-w-[1200px] mx-auto px-4">
-    <header class="bg-woodyyellow p-4 flex items-center justify-between rounded-b-2xl">
+  <div class="max-w-[640px] mx-auto px-4">
+    <header class="bg-woodyyellow p-4 mb-6 flex items-center justify-between rounded-b-2xl">
       <div class="bg-lightwhite text-woodyblue px-4 py-2 rounded-md font-bold text-2xl font-fredoka cursor-pointer hover:text-woodyyellow transition-all duration-300">
         Woody Friends
       </div>
@@ -22,9 +22,13 @@
     </header>
     
     <main class="flex flex-col gap-6">
-      <section id="hero" class="flex flex-col items-center justify-center min-h-[500px] bg-woodylightblue text-white text-center">
-        <h1 class="text-5xl font-bold mb-4">Welcome to Woody Friends!</h1>
-        <p class="text-xl">Handcrafted wooden multi-tools for young adventurers.</p>
+      <section id="hero" class="flex flex-col items-center justify-center bg-woodylightblue text-center overflow-hidden">
+        <div class="hero-copy p-8">
+          <h1 class="text-5xl font-bold mb-4 text-woodyblue font-fredoka tracking-wide">Adventure Awaits with Woody Friends!</h1>
+        <p class="text-2xl font-bold text-woodygreen">Handcrafted wooden multitools for little explorers. Eco-friendly, safe, and packed with imagination.</p>
+        </div>
+        
+        <img src="./images/img_hero.png" alt="Boy in the mountains enjoying his wooden knife.">
       </section>
 
       <section id="about" class="flex flex-col items-center justify-center min-h-[500px] bg-woodyyellow text-white text-center">
@@ -68,6 +72,7 @@
             woodyblue: '#4169E1',
             woodyyellow: '#FFD700',
             woodywood: '#D2B48C',
+            woodygreen: '#0A6B4C',
             softblue: 'rgba(135, 206, 235, 0.1)',
             softyellow: 'rgba(255, 215, 0, 0.1)',
             lightwhite: '#FFFAF0',
