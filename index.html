@@ -8,12 +8,12 @@
   <title>Project 02 | Woody Friends</title>
 </head>
 <body class="font-quicksand">
-  <div class="max-w-[640px] mx-auto px-4">
-    <header class="bg-woodyyellow p-4 mb-6 flex flex-col md:flex-row sm:gap-2 items-center justify-between rounded-b-2xl">
+  <div class="max-w-[900px] mx-auto px-4">
+    <header class="bg-woodyyellow p-4 mb-6 flex flex-col md:flex-row gap-2 items-center justify-between rounded-b-2xl">
       <div class="bg-lightwhite text-woodyblue px-4 py-2 rounded-md font-bold text-2xl font-fredoka cursor-pointer hover:text-woodyyellow transition-all duration-300">
         Woody Friends
       </div>
-      <nav class="flex flex-col sm:flex-row gap-4 sm:gap-6 bg-lightwhite px-4 sm:px-6 py-2 rounded-md text-sm sm:text-base">
+      <nav class="flex flex-row gap-4 sm:gap-6 bg-lightwhite px-4 sm:px-6 py-2 rounded-md text-sm sm:text-base">
         <a href="#about" class="text-woodyblue text-base font-bold hover:text-woodyyellow transition-all duration-300">About</a>
         <a href="#shop" class="text-woodyblue text-base font-bold hover:text-woodyyellow transition-all duration-300">Shop</a>
         <a href="#contact" class="text-woodyblue text-base font-bold hover:text-woodyyellow transition-all duration-300">Contact</a>
@@ -26,7 +26,7 @@
           <h1 class="text-5xl font-bold mb-4 text-woodyblue font-fredoka tracking-wide">Adventure Awaits with Woody Friends!</h1>
         <p class="text-2xl font-bold text-woodygreen">Handcrafted wooden multitools for little explorers. Eco-friendly, safe, and packed with imagination.</p>
         </div>
-        <img src="./images/img_hero.png" alt="Boy in the mountains enjoying his wooden knife." class="w-full max-w-[300px]">
+        <img src="./images/img_hero.png" alt="Boy in the mountains enjoying his wooden knife." class="w-full">
       </section>
 
       <section id="about" class="flex flex-col items-center justify-center min-h-[500px] bg-woodyblue text-white text-center">
@@ -43,7 +43,7 @@
 
       <section id="shop" class="flex flex-col items-center justify-center px-8 py-16 bg-woodyyellow text-white">
         <h1 class="section-title">Shop</h1>
-        <div class="shop-flex text-1.5xl font-bold flex flex-col gap-6">
+        <div class="shop-flex w-full text-1.5xl font-bold flex flex-col gap-6">
           <div class="bento-box">
             <div class="copy">
               <h2 class="copy-text">Woody Mini</h2>
@@ -152,7 +152,7 @@
         @apply self-start text-5xl font-bold mb-4 text-woodyblue font-fredoka tracking-wide;
       }
       .bento-box {
-        @apply bg-woodyblue rounded-2xl p-8 flex;
+        @apply bg-woodyblue rounded-2xl p-8 flex justify-center;
       }
       .copy-text {
         @apply font-fredoka text-3xl text-woodyyellow mb-4;
