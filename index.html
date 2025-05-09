@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/reset.css">
-
+  <link rel="stylesheet" href="./css/styles.css">
   <title>Project 02 | Woody Friends</title>
 </head>
 <body class="font-quicksand">
@@ -14,7 +14,6 @@
         Woody Friends
       </div>
       <nav class="flex items-center gap-6 bg-lightwhite px-6 py-2 rounded-md">
-        <a href="#hero" class="text-woodyblue text-base font-bold hover:text-woodyyellow transition-all duration-300">Home</a>
         <a href="#about" class="text-woodyblue text-base font-bold hover:text-woodyyellow transition-all duration-300">About</a>
         <a href="#shop" class="text-woodyblue text-base font-bold hover:text-woodyyellow transition-all duration-300">Shop</a>
         <a href="#contact" class="text-woodyblue text-base font-bold hover:text-woodyyellow transition-all duration-300">Contact</a>
@@ -27,39 +26,95 @@
           <h1 class="text-5xl font-bold mb-4 text-woodyblue font-fredoka tracking-wide">Adventure Awaits with Woody Friends!</h1>
         <p class="text-2xl font-bold text-woodygreen">Handcrafted wooden multitools for little explorers. Eco-friendly, safe, and packed with imagination.</p>
         </div>
-        
         <img src="./images/img_hero.png" alt="Boy in the mountains enjoying his wooden knife.">
       </section>
 
-      <section id="about" class="flex flex-col items-center justify-center min-h-[500px] bg-woodyyellow text-white text-center">
+      <section id="about" class="flex flex-col items-center justify-center min-h-[500px] bg-woodyblue text-white text-center">
         <h1 class="text-5xl font-bold">About</h1>
-        <!-- About Us Section -->
       </section>
 
-      <section id="img-gallery-1" class="flex flex-col items-center justify-center min-h-[500px] bg-woodyblue text-white text-center">
-        <h1 class="text-5xl font-bold">Gallery 1</h1>
-        
-        <!-- Image Gallery 1 -->
+      <section id="img-gallery-1" class="flex gap-6 items-center justify-center px-8 py-16 bg-woodywood text-white text-center">
+        <div class="img-left flex flex-col gap-6">
+          <img class="rounded-2xl" src="./images/img_left_top_g1.png" alt="Woody Explorer in childs hand.">
+          <img class="rounded-2xl" src="./images/img_left_bottom_g1.png" alt="The whole Woody Friends range. Three sizes.">
+        </div>
+        <img class="rounded-2xl" src="./images/img_right_g1.png" alt="A Woodworker making a Woody Explorer.">
       </section>
 
-      <section id="shop" class="flex flex-col items-center justify-center min-h-[500px] bg-woodyyellow text-white text-center">
-        <h1 class="text-5xl font-bold">Shop, 3 Products</h1>
-        <!-- Shop Section -->
+      <section id="shop" class="flex flex-col items-center justify-center px-8 py-16 bg-woodyyellow text-white">
+        <h1 class="section-title">Shop</h1>
+        <div class="shop-flex text-1.5xl font-bold flex flex-col gap-6">
+          <div class="bento-box">
+            <div class="copy">
+              <h2 class="copy-text">Woody Mini</h2>
+              <p>The perfect first multitool.</p>
+              <p>Tools:</p>
+              <ul class="list-disc list-inside">
+                <li>Knife</li>
+                <li>Screwdriver</li>
+                <li>Nail file</li>
+              </ul>
+              <button class="btn-cart">Add to cart</button>
+            </div>
+            <div class="bento-img">
+              <img class="translate-x-[50px] translate-y-[50px] scale-110" src="./images/img_mini.png" alt="Woody Mini knife">
+            </div>
+          </div>
+          <div class="bento-box">
+            <div class="copy">
+              <h2 class="copy-text">Woody Explorer</h2>
+              <p>For bigger advertures.</p>
+              <p>Tools:</p>
+              <ul class="list-disc list-inside">
+                <li>Knife</li>
+                <li>Scissors</li>
+                <li>Bottle opener</li>
+                <li>Scredriver</li>
+              </ul>
+              <button class="btn-cart">Add to cart</button>
+            </div>
+            <div class="bento-img">
+              <img class="translate-x-[50px] translate-y-[60px] scale-110" src="./images/img_midi.png" alt="Woody Mini knife">
+            </div>
+          </div>
+          <div class="bento-box">
+            <div class="copy max-w-[200px]">
+              <h2 class="copy-text">Woody Master</h2>
+              <p>Our ultimate multitool with a wooden heart.</p>
+              <p>Tools:</p>
+              <ul class="list-disc list-inside">
+                <li>Knife</li>
+                <li>Screwdriver</li>
+                <li>Nail file</li>
+              </ul>
+              <button class="btn-cart">Add to cart</button>
+            </div>
+            <div class="bento-img">
+              <img class="translate-x-[45px] translate-y-[45px] scale-110" src="./images/img_maxi.png" alt="Woody Mini knife">
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section id="contact" class="flex flex-col items-center justify-center min-h-[500px] bg-woodywood text-white text-center">
+      <section id="contact" class="flex flex-col items-center justify-center min-h-[500px] bg-woodyblue text-white text-center">
         <h1 class="text-5xl font-bold">Contact</h1>
-        <!-- Contact Section -->
       </section>
 
-      <section id="img-gallery-2" class="flex flex-col items-center justify-center min-h-[500px] bg-woodylightblue text-white text-center mb-6">
-        <h1 class="text-5xl font-bold">Gallery 2</h1>
-        <!-- Image Gallery 2 -->
+      <section id="img-gallery-2" class="flex gap-6 items-center justify-center bg-woodywood text-white text-center mb-6 px-8 py-16">
+        <img class="rounded-2xl" src="./images/img_left_g2.jpg" alt="Children with Woody's in the park.">
+        <img class="rounded-2xl" src="./images/img_right_g2.jpg" alt="Children with Woody's in the park.">
       </section>
     </main>
-    <footer class="bg-woodyyellow p-14 flex items-center justify-between rounded-t-2xl text-white text-center">
-      <h1 class="text-5xl font-bold">Footer</h1>
-      <!-- Footer content -->
+
+    <footer class="bg-woodyyellow p-16 flex flex-col items-center justify-between gap-16 rounded-t-2xl text-woodyblue text-center">
+      <div class="img-footer">
+        <img src="./images/img_footer.png" alt="woody friends beaver">
+      </div>
+      <div class="footer-copy flex flex-col gap-6">
+        <p class="font-fredoka font-bold text-2xl">Eco-Friendly | Kid-Safe | Adventure-Ready</p>
+        <p class="footer-text"><a class="footer-link" href="#">Instagram</a> | <a class="footer-link" href="#">Pinterest</a> | <a class="footer-link" href="#">Facebook</a></p>
+        <p class="footer-text mb-14">&copy; 2025 Woody Friends & WBS Coding School</p>
+      </div>
     </footer>
   </div>
   <script src="https://cdn.tailwindcss.com"></script>
@@ -87,8 +142,26 @@
   </script>
   <style type="text/tailwindcss">
     @layer components {
-      section {
+        section {
         @apply rounded-2xl;
+      }
+        .btn-cart {
+        @apply text-2xl font-fredoka text-woodyblue bg-woodyyellow rounded-3xl mt-5 px-5 py-3 shadow-[4px_4px_0_#512D01] hover:shadow-none hover:translate-x-4 transition-all duration-300 ease-in-out;
+      }
+      .section-title {
+        @apply self-start text-5xl font-bold mb-4 text-woodyblue font-fredoka tracking-wide;
+      }
+      .bento-box {
+        @apply bg-woodyblue rounded-2xl p-8 flex;
+      }
+      .copy-text {
+        @apply font-fredoka text-3xl text-woodyyellow mb-4;
+      }
+      .footer-link {
+        @apply inline-block hover:text-lightwhite hover:scale-95 transition-all duration-300;
+      }
+      .footer-text {
+        @apply font-quicksand font-bold text-xl;
       }
     }
   </style>
