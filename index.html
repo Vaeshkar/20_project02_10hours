@@ -33,12 +33,10 @@
         <h1 class="text-5xl font-bold">About</h1>
       </section>
 
-      <section id="img-gallery-1" class="flex flex-col lg:flex-row gap-6 items-center justify-center px-4 sm:px-8 py-16 bg-woodywood text-white text-center">
-        <div class="img-left flex flex-row lg:flex-col gap-6">
-          <img class="rounded-2xl" src="./images/img_left_top_g1.png" alt="Woody Explorer in childs hand.">
-          <img class="rounded-2xl" src="./images/img_left_bottom_g1.png" alt="The whole Woody Friends range. Three sizes.">
-        </div>
-        <img class="rounded-2xl max-w-[390px]" src="./images/img_right_g1.png" alt="A Woodworker making a Woody Explorer.">
+      <section id="img-gallery-1" class="gallery-grid px-8 py-16 bg-woodywood text-white text-center">
+        <img src="./images/img_left_top_g1.png" alt="Woody Explorer in childs hand." class="rounded-2xl w-full gallery-left-top">
+        <img src="./images/img_left_bottom_g1.png" alt="The whole Woody Friends range. Three sizes." class="rounded-2xl w-full gallery-left-bottom">
+        <img src="./images/img_right_g1.png" alt="A Woodworker making a Woody Explorer." class="rounded-2xl w-full gallery-right self-end">
       </section>
 
       <section id="shop" class="flex flex-col items-center justify-center px-8 py-16 bg-woodyyellow text-white">
@@ -165,6 +163,32 @@
       }
       img {
         @apply w-full h-auto;
+      }
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+          "left-top right right"
+          "left-bottom right right";
+        gap: 1.5rem;
+      }
+      .gallery-left-top {
+        grid-area: left-top;
+      }
+      .gallery-left-bottom {
+        grid-area: left-bottom;
+      }
+      .gallery-right {
+        grid-area: right;
+      }
+      @media (max-width: 1023px) {
+        .gallery-grid {
+          grid-template-areas:
+            "left-top"
+            "left-bottom"
+            "right";
+          grid-template-columns: 1fr;
+        }
       }
     }
   </style>
