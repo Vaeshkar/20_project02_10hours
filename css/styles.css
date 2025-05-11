@@ -35,3 +35,9 @@ div.stamps img {
   min-width: 24px;
   width: auto;
 }
+
+/* Stops the images from getting dragged while stamping. ;) */
+img {
+  user-select: none;
+  -webkit-user-drag: none;
+}
