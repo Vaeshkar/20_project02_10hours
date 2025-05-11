@@ -29,7 +29,7 @@ const addStamp = function (x, y) {
 
   img.style.left = x + "px"
   img.style.top = y + "px"
-  img.style.width = (Math.floor(Math.random() * 6) + 8) + "%"
+  img.style.width = (Math.floor(Math.random() * 6) + 10) + "%"
   const angle = Math.floor(Math.random() * 360);
   const flip = Math.random() < 0.5 ? 1 : -1;
   img.style.transform = `rotate(${angle}deg) scaleX(${flip})`
@@ -58,8 +58,8 @@ let touchUsed = false
 
 // to see where the users mouse clicked on the .window
 document.addEventListener("click", function (event) {
-  // This event information will be send back to the {addStamp} const 
-  // and set to the x and y parameters
+  // disable the "click" event on touch-devices
+  if (touchUsed) return;
   addStamp(event.pageX, event.pageY)
 })
 
