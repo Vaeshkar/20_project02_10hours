@@ -32,16 +32,21 @@ const addStamp = function (x, y) {
 
   img.style.left = x + "px"
   img.style.top = y + "px"
-  img.style.width = (Math.floor(Math.random() * 6) + 12) + "%"
+  img.style.width = (Math.floor(Math.random() * 6) + 16) + "%"
+
   const angle = Math.floor(Math.random() * 360);
   const flip = Math.random() < 0.5 ? 1 : -1;
-  img.style.transform = `rotate(${angle}deg) scaleX(${flip})`
+  img.style.setProperty('--final-rotation', `${angle}deg`);
+  img.style.setProperty('--flip-scale', flip);
   img.style.transformOrigin = "center center";
 
   if (stampsTag.querySelectorAll("img").length >= 25) return;
 
   // Inside the HTML tag we add a new <img> tag
   stampsTag.append(img)
+  img.addEventListener("animationend", () => {
+    img.style.transform = `rotate(${angle}deg) scaleX(${flip})`
+  })
   setTimeout(() => {
     img.remove()
   }, 8000)
