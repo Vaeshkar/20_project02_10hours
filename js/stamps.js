@@ -56,16 +56,18 @@ const addStamp = function (x, y) {
 // Reset it, so no double SVG generation happens
 let touchUsed = false
 
-// to see where the users mouse clicked on the .window
-document.addEventListener("click", function (event) {
-  // disable the "click" event on touch-devices
-  if (touchUsed) return;
-  addStamp(event.pageX, event.pageY)
-})
-
 document.addEventListener("touchstart", (event) => {
   touchUsed = true;
   const touch = event.touches[0]
   addStamp(touch.pageX, touch.pageY)
-  setTimeout(() => { touchUsed = false }, 500)
+}, {passive: true })
+
+// to see where the users mouse clicked on the .window
+document.addEventListener("click", function (event) {
+  // disable the "click" event on touch-devices
+  if (touchUsed) {
+    touchUsed = false
+    return;
+  }
+  addStamp(event.pageX, event.pageY)
 })
