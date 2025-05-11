@@ -29,7 +29,7 @@ const addStamp = function (x, y) {
 
   img.style.left = x + "px"
   img.style.top = y + "px"
-  img.style.width = (Math.floor(Math.random() * 6) + 16) + "%"
+  img.style.width = (Math.floor(Math.random() * 6) + 3) + "%"
   const angle = Math.floor(Math.random() * 360);
   const flip = Math.random() < 0.5 ? 1 : -1;
   img.style.transform = `rotate(${angle}deg) scaleX(${flip})`
