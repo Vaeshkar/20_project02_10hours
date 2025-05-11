@@ -14,6 +14,11 @@
   }
 }
 
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
 div.stamps {
   position: absolute;
   top: 0;
@@ -26,7 +31,7 @@ div.stamps {
 div.stamps img {
   position: absolute;
   animation: spin-in 1s ease-out;
-  max-width: 16%;
-  max-height: auto;
-  /* background: rgba(255, 0, 0, 0.5); */
+  max-width: 80px;
+  min-width: 24px;
+  width: auto;
 }
