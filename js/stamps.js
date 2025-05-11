@@ -29,7 +29,7 @@ const addStamp = function (x, y) {
 
   img.style.left = x + "px"
   img.style.top = y + "px"
-  img.style.width = (Math.floor(Math.random() * 6) + 3) + "%"
+  img.style.width = (Math.floor(Math.random() * 6) + 8) + "%"
   const angle = Math.floor(Math.random() * 360);
   const flip = Math.random() < 0.5 ? 1 : -1;
   img.style.transform = `rotate(${angle}deg) scaleX(${flip})`
@@ -52,6 +52,10 @@ const addStamp = function (x, y) {
 }
 
 // Adding an event listener on click 
+
+// Reset it, so no double SVG generation happens
+let touchUsed = false
+
 // to see where the users mouse clicked on the .window
 document.addEventListener("click", function (event) {
   // This event information will be send back to the {addStamp} const 
@@ -60,6 +64,8 @@ document.addEventListener("click", function (event) {
 })
 
 document.addEventListener("touchstart", (event) => {
+  touchUsed = true;
   const touch = event.touches[0]
   addStamp(touch.pageX, touch.pageY)
+  setTimeout(() => { touchUsed = false }, 500)
 })
