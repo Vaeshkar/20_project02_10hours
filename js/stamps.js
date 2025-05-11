@@ -4,7 +4,10 @@ let number = 0
 // Create an array with the 6 stamps
 // Check your spelling!!
 const stamps = [
-  "../svg/tree.svg"
+  "../svg/tree.svg",
+  "../svg/squirrel.svg",
+  "../svg/toad.svg",
+  "../svg/leaf.svg"
 ]
 
 // Grabbing the HTML Tag from the document
@@ -41,7 +44,7 @@ const addStamp = function (x, y) {
   stampsTag.append(img)
   setTimeout(() => {
     img.remove()
-  }, 15000)
+  }, 8000)
   // After each click we increase the value inside the let {number}
   number = number + 1
   // Add a check to see if the let {number} exceeds the [stamps] array .lenght
