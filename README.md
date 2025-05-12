@@ -67,3 +67,12 @@ Let's build something great together! 🚀
 - `rgba(135, 206, 235, 0.1)` → Soft Blue (Light section background)
 - `rgba(255, 215, 0, 0.1)` → Soft Yellow (Light section background)
 - `#FFFAF0` → Light White (Neutral background tone)
+
+## Changelog
+
+### May 11, 2025
+- Added interactive stamping feature with animated SVG characters (tree, squirrel, bear, mushroom, leaf, toad).
+- Implemented mobile support with `touchstart` listener to avoid double stamping.
+- Prevented image dragging across the entire page to support smooth stamping experience.
+- Limited active stamps to 25 and added automatic removal after 8 seconds.
+- Randomized rotation and flip for each stamp, including smooth spin-in animation.
