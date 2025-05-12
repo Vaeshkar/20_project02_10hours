@@ -40,6 +40,10 @@ div.stamps img {
   width: auto;
 }
 
+div.stamps img.fade-out {
+  animation: fade-out 0.8s ease-in forwards !important;
+}
+
 /* Stops the images from getting dragged while stamping. ;) */
 img {
   user-select: none;
