@@ -30,8 +30,17 @@
         <img src="./images/img_hero.png" alt="Boy in the mountains enjoying his wooden knife." class="w-full">
       </section>
 
-      <section id="about" class="flex flex-col items-center justify-center min-h-[500px] bg-woodyblue text-white text-center">
-        <h1 class="text-5xl font-bold">About</h1>
+      <section id="about" class="flex flex-col px-8 py-16 bg-woodyblue text-white text-left min-h-[500px]"> 
+        <h1 class="text-5xl font-bold text-woodyyellow woody-dropshadow font-fredoka mb-4 tracking-wide">About</h1>
+        <div class="about-copy text-2xl font-bold max-w-[600px]"> 
+          <p>Woody Friends was born from a simple idea:
+            Create beautiful, sustainable tools that spark creativity and respect for nature.
+            Our handcrafted all-wood multitools are designed for kids and dreamers of all ages – because adventure should start with responsibility.
+          </p>
+          <br>
+          <p> Crafted with love. Inspired by nature.</p>
+        </div>
+        
       </section>
 
       <section id="img-gallery-1" class="gallery-grid px-8 py-16 bg-woodywood text-white text-center">
@@ -209,8 +218,9 @@
         grid-area: right;
       }
       .woody-dropshadow {
-        filter: drop-shadow(6px 6px 0 #512D01);
+        filter: drop-shadow(4px 4px 0 #512D01);
       }
+      
       @media (max-width: 1023px) {
         .gallery-grid {
           grid-template-areas:
