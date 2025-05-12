@@ -10,6 +10,9 @@ const stamps = [
   "../svg/leaf.svg"
 ]
 
+// Fade-out audio reused for all stamps
+const fadeAudio = new Audio("audio/fade.mp3");
+
 // Grabbing the HTML Tag from the document
 const stampsTag = document.querySelector("div.stamps")
 
@@ -48,8 +51,15 @@ const addStamp = function (x, y) {
     img.style.transform = `rotate(${angle}deg) scaleX(${flip})`
   })
   setTimeout(() => {
-    img.remove()
-  }, 8000)
+    // Add fade-out animation and play fade sound
+    img.style.animation = "fade-out 0.8s ease-in";
+    const clone = fadeAudio.cloneNode();
+    clone.volume = 0.5;
+    clone.play();
+    setTimeout(() => {
+      img.remove();
+    }, 800);
+  }, 2000)
   // After each click we increase the value inside the let {number}
   number = number + 1
   // Add a check to see if the let {number} exceeds the [stamps] array .lenght
