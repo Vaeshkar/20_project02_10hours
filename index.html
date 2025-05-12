@@ -95,8 +95,30 @@
         </div>
       </section>
 
-      <section id="contact" class="flex flex-col items-center justify-center min-h-[500px] bg-woodyblue text-white text-center">
-        <h1 class="text-5xl font-bold">Contact</h1>
+      <section id="contact" class="flex flex-col items-center justify-center min-h-[500px] bg-woodyblue text-white text-center px-8 py-16">
+        <div class="contact-container text-2xl w-full ">
+          <div class="contact-copy text-left flex flex-col gap-2">
+            <h1 class="font-bold font-fredoka text-5xl text-woodyyellow woody-dropshadow tracking-wide">Contact</h1>
+            <p class="">We’d love to hear from you!</p>
+            <p class="">Questions, adventures, or just a friendly hello?</p>
+          </div>
+          <div class="contact-images block lg:flex xl:flex lg:flex-col xl:flex-col items-left lg:items-center xl:items-center">
+            <div class="contact-email flex justify-start gap-16">
+              <div class="contact-email-copy flex justify-center items-center">
+                <p class="">Email:</p>
+              </div>
+              <img class="max-w-[200px] hover:scale-110 transition-all duration-300 cursor-pointer" src="./images/img_email.png" alt="Email Icon Envelop with a smile.">
+            </div>
+            <div class="contact-location flex justify-start gap-16">
+              <div class="contact-location-copy flex justify-center items-center">
+                <p class="">Location:</p>
+              </div>
+              <div class="contact-image">
+                <img class="max-w-[400px] hover:scale-110 transition-all duration-300 cursor-pointer" src="./images/img_location.png" alt="Image location: Road, Forest and Mountains.">
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section id="img-gallery-2" class="flex flex-col lg:flex-row gap-6 items-center justify-center bg-woodywood text-white text-center mb-6 px-8 py-16">
@@ -185,6 +207,9 @@
       }
       .gallery-right {
         grid-area: right;
+      }
+      .woody-dropshadow {
+        filter: drop-shadow(6px 6px 0 #512D01);
       }
       @media (max-width: 1023px) {
         .gallery-grid {
