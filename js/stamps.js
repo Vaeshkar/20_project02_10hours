@@ -59,7 +59,7 @@ const addStamp = function (x, y) {
     setTimeout(() => {
       img.remove();
     }, 800);
-  }, 2000)
+  }, 2500)
   // After each click we increase the value inside the let {number}
   number = number + 1
   // Add a check to see if the let {number} exceeds the [stamps] array .lenght
