@@ -35,7 +35,6 @@ div.stamps {
 div.stamps img {
   position: absolute;
   animation: spin-in 1s ease-out forwards;
-  max-width: 80px;
   min-width: 24px;
   width: auto;
 }
